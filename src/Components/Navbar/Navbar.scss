@@ -1,0 +1,26 @@
+@import "../../variables";
+
+nav {
+    .navbar-brand {
+        padding-left: 20px;
+    }
+
+    .nav-item {
+        padding: 0.9em;
+    }
+
+    .nav-item:last-child {
+        padding-right: 5em;
+    }
+
+    p {
+        @extend %zoom;
+        @include customizeText($font-color, 20px, $josefin);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        background: $mobile-nav-color;
+    }
+}

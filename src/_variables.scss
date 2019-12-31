@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito|");
+
+$mobile-nav-color: #c1e1ee;
+$font-color: #2d8db3;
+$text-color: #545454;
+$josefin: "Josefin Sans", sans-serif;
+$nunito: "Nunito", sans-serif;
+$gradient: linear-gradient(to bottom, #c1e1ee, #9ad9e7);
+$social: linear-gradient(45deg, #60dae6, #9b9dc7);
+$scroll: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.44, rgb(122, 153, 217)),
+    color-stop(0.72, rgb(73, 125, 189)),
+    color-stop(0.86, rgb(45, 106, 185))
+);
+
+%center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+@mixin imageDimensions($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin customizeText($color, $size, $font) {
+    color: $color;
+    font-size: $size;
+    font-family: $font;
+}
+
+%zoom {
+    transition: 0.15s ease-in;
+}
+
+%zoom:hover {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}

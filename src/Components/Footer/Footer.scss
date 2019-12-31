@@ -1,0 +1,25 @@
+@import "../../variables";
+
+.footer {
+    .socialButtons {
+        @extend %center;
+
+        .social {
+            margin: 10px;
+        }
+    }
+
+    .copyright {
+        @extend %center;
+        margin: 0px 10px;
+
+        p {
+            text-align: center;
+            color: rgb(155, 155, 155);
+        }
+
+        .heart {
+            color: red;
+        }
+    }
+}

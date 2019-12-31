@@ -1,0 +1,21 @@
+@import "../../variables";
+
+.container-fluid {
+    @extend %center;
+
+    img {
+        @include imageDimensions(40%, 40%);
+    }
+}
+
+@media (max-width: 768px) {
+    .container-fluid img {
+        @include imageDimensions(55%, 55%);
+    }
+}
+
+@media (max-width: 576px) {
+    .container-fluid img {
+        @include imageDimensions(100%, 100%);
+    }
+}

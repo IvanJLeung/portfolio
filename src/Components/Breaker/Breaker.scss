@@ -1,0 +1,13 @@
+@import "../../variables";
+
+.breaker {
+    img {
+        @extend %center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .breaker img {
+        width: 30%;
+    }
+}

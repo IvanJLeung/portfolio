@@ -1,0 +1,33 @@
+@import "../../variables";
+
+.about {
+    .left-col {
+        @extend %center;
+        @extend %zoom;
+
+        img {
+            @include imageDimensions(60%, auto);
+            margin: 40px 0px;
+            border-radius: 10px;
+        }
+    }
+
+    .right-col {
+        overflow: hidden;
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            padding: 30px 0px;
+        }
+
+        h1 {
+            @extend %center;
+            @include customizeText($font-color, 30px, $nunito);
+            font-weight: bold;
+        }
+
+        p {
+            @include customizeText($text-color, 18px, $nunito);
+            margin: 20px 0px;
+        }
+    }
+}

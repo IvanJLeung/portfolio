@@ -1,0 +1,7 @@
+@import "../../variables";
+
+.projects {
+    .row {
+        @extend %center;
+    }
+}

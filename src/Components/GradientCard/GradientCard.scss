@@ -1,0 +1,55 @@
+@import "../../variables";
+@import url("https://fonts.googleapis.com/css?family=Abel");
+
+.card {
+    font-family: Abel, Arial, Verdana, sans-serif;
+    @include imageDimensions(450px, 250px);
+    background-color: white;
+    border-radius: 0px;
+    overflow: hidden;
+    border: none;
+
+    .main {
+        @include imageDimensions(350px, 100%);
+        position: absolute;
+        right: 0;
+        padding: 1rem;
+
+        h1 {
+            font-size: 35px;
+            text-align: center;
+            color: $text-color;
+            padding: 10px 0px 4px 0px;
+        }
+    }
+
+    .additional {
+        @extend %center;
+        @include imageDimensions(100px, 100%); //width = how wide bar swings
+        background: linear-gradient(#de685e, #ee786e);
+        transition: width 0.4s;
+        z-index: 1;
+
+        .more-info {
+            .fas {
+                @extend %zoom;
+                font-size: 400%;
+                color: white;
+            }
+        }
+    }
+}
+
+.card:hover .additional {
+    width: 100%;
+}
+
+@media (max-width: 575px) {
+    .card {
+        @include imageDimensions(600px, 200px);
+    }
+
+    .card .additional {
+        width: 600px;
+    }
+}

@@ -1,0 +1,17 @@
+@import "../../variables";
+
+.skill {
+    @extend %center;
+    @extend %zoom;
+    @include imageDimensions(auto, 40px);
+    background: white;
+    border-radius: 15px;
+    border-bottom: 3px solid $font-color;
+
+    p {
+        @extend %center;
+        font-family: $nunito;
+        font-size: 23px;
+        color: $font-color;
+    }
+}
