@@ -11,7 +11,7 @@ import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
 import Breaker from "./Components/Breaker/Breaker";
 import SkillList from "./Components/SkillList/SkillList";
-import ProjectList from "./Components/ProjectList/ProjectList";
+// import ProjectList from "./Components/ProjectList/ProjectList";
 
 function App() {
     return (
@@ -28,10 +28,12 @@ function App() {
                 <Breaker url={skills} alt="Skills"></Breaker>
                 <SkillList></SkillList>
             </section>
-            <section class="section-4">
+            {/* <section class="section-4">
                 <ProjectList></ProjectList>
+            </section> */}
+            <section class="section-5">
+                <Footer></Footer>
             </section>
-            <Footer></Footer>
         </div>
     );
 }

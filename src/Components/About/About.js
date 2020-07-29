@@ -16,15 +16,11 @@ function About() {
                     <Roll right delay={500}>
                         <h1>About Me</h1>
                         <p>
-                            Hello, my name is Ivan Leung and I am from Irvine, California. I am a second-year Computer
-                            Science student at Georgia Institute of Technology concentrating in Artificial Intelligence
+                            Hello, my name is Ivan Leung and I am from Irvine, California. I am a third-year Computer
+                            Science student at Georgia Institute of Technology with a focus in Artificial Intelligence
                             and Digital Media.
                         </p>
-                        <p>
-                            Aside from computer programming, I am also very passionate about artistic expression.
-                            Currently, I am working towards becoming a web-developer all the while continuing to pursue
-                            my passion in film, photography, and graphic design.
-                        </p>
+                        <p>Something about how I am excited to use cs for good... ? lol</p>
                     </Roll>
                 </div>
             </div>
