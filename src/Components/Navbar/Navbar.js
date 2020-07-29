@@ -26,11 +26,11 @@ function Navbar() {
                             <p>Home</p> <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    {/* <li class="nav-item">
                         <a class="nav-link" href="#projects">
                             <p>Projects</p>
                         </a>
-                    </li>
+                    </li> */}
                     <li class="nav-item">
                         <a
                             class="nav-link"

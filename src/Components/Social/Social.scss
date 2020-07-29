@@ -6,15 +6,18 @@
         @include imageDimensions(60px, 60px);
         text-decoration: none;
         font-size: 18px;
-        color: white;
+        // color: white;
+        color: $font-color;
     }
 
     a::before {
         @include imageDimensions(60px, 60px);
         content: "";
         position: absolute;
-        background: $social;
+        // background: $social;
+        background: white;
         border-radius: 50%;
+        border-bottom: 3px solid $font-color;
         z-index: -1;
         transition: 0.3s ease-in;
     }
@@ -28,7 +31,8 @@
     }
 
     a:hover i {
-        background: $social;
+        // background: $social;
+        background: linear-gradient(45deg, $font-color, $font-color);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

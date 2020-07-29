@@ -4,13 +4,13 @@ import Fade from "react-reveal/Fade";
 import Skill from "../Skill/Skill";
 
 function SkillList(props) {
-    const programming = ["Java", "Python", "Data Structures", "Algorithms", "REST API"].map(skill => (
+    const programming = ["Java", "Python", "C/C++", "Data Structures", "Algorithms"].map((skill) => (
         <Skill title={skill}></Skill>
     ));
 
-    const web = ["React", "HTML5", "CSS/Sass", "Javascript", "Bootstrap"].map(skill => <Skill title={skill}></Skill>);
+    const web = ["React", "HTML5", "CSS/Sass", "Javascript", "Bootstrap"].map((skill) => <Skill title={skill}></Skill>);
 
-    const media = ["Git", "Graphic Design", "Video/Photo Editing", "Color Grading", "Film & Photography"].map(skill => (
+    const media = ["Git", "SQL", "Computer Graphics", "Graphic Design", "Video/Photo Editing"].map((skill) => (
         <Skill title={skill}></Skill>
     ));
 

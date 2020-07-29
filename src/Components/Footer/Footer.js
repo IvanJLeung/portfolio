@@ -8,16 +8,16 @@ function Footer() {
     const socialList = [
         {
             website: "https://twitter.com/HeyoIvan",
-            icon: "fab fa-twitter"
+            icon: "fab fa-twitter",
         },
         {
             website: "https://www.linkedin.com/in/ivan-leung-2022/",
-            icon: "fab fa-linkedin"
+            icon: "fab fa-linkedin",
         },
         {
             website: "https://github.com/IvanJLeung/",
-            icon: "fab fa-github"
-        }
+            icon: "fab fa-github",
+        },
     ].map(({ website, icon }) => {
         return <Social class="social" website={website} icon={icon}></Social>;
     });
@@ -30,7 +30,7 @@ function Footer() {
             <div class="copyright">
                 <Fade bottom duration={2000}>
                     <p>
-                        ©2019 Made with <span class="heart">♥</span> by Ivan Leung. All rights reserved.
+                        ©2020 Made with <span class="heart">♥</span> by Ivan Leung. All rights reserved.
                     </p>
                 </Fade>
             </div>
