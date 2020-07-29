@@ -20,7 +20,6 @@ function About() {
                             Science student at Georgia Institute of Technology with a focus in Artificial Intelligence
                             and Digital Media.
                         </p>
-                        <p>Something about how I am excited to use cs for good... ? lol</p>
                     </Roll>
                 </div>
             </div>
